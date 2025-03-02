@@ -10,7 +10,18 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+
+      appBar: AppBar(
+        title: Text(
+          "NUB Blood Donation",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.red,
+      ),
+
+
 
     );
   }
