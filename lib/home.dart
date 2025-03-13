@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
             children: [
               Container(
                 width: double.infinity,
-                height: 140,
+                height: 160,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Colors.red, Colors.redAccent],
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                       Text(
                         "Donate Blood, Save Lives!",
                         style: TextStyle(
-                            fontSize: 28,
+                            fontSize: 27,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
@@ -78,11 +78,67 @@ class _HomeState extends State<Home> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.favorite, // Donate Blood icon
+                                size: 50,
+                                color: Colors.red,
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                "Donate Blood",
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                       SizedBox(
                         width: 16,
                       ),
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Container(
+                          width: 140,
+                          height: 140,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.search, // Find Blood icon
+                                size: 50,
+                                color: Colors.red,
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                "Find Blood",
+                                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               )
             ],
