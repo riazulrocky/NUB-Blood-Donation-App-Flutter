@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
             children: [
               Container(
                 width: double.infinity,
-                height: 200,
+                height: 140,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [Colors.red, Colors.redAccent],
@@ -60,6 +60,31 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 24,
+              ),
+              Column(
+                children: [
+                  Text(
+                    "Quick Actions",
+                    style: TextStyle(
+                        fontSize: 23,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 16,
+                      ),
+                    ],
+                  )
+                ],
+              )
             ],
           ),
         ),
